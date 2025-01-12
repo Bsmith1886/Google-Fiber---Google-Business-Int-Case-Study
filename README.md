@@ -1,23 +1,24 @@
 # Google-Fiber---Google-Business-Int-Case-Study
-This is the project I completed as a part of the Google Business Intelligence Certificate.
+
+This is the project I completed as part of the Google Business Intelligence Certificate.
 
 ## Case Study Overview
 
-The Google Fiber customer service team’s goal is to determine how often customers are calling customer support after their first inquiry; this will help leadership understand how effectively the team is able to answer customer questions the first time. The dashboard you create should demonstrate an understanding of this goal and provide your stakeholders with insights about repeat caller volumes in different markets and the types of problems they represent. As part of the interview process, you have been asked to create a dashboard that will: 
+The Google Fiber customer service team’s goal is to determine how often customers are calling customer support after their first inquiry. This analysis will help leadership understand how effectively the team is answering customer questions on the first attempt. The dashboard you create should demonstrate an understanding of this goal and provide stakeholders with insights about repeat caller volumes in different markets and the types of problems they represent. 
 
-* Help them understand how often customers are calling customer support after their first inquiry; this will help leadership understand how effectively the team is able to answer customer questions the first time
+As part of the interview process, you have been asked to create a dashboard that will:
 
-* Provide insights into the types of customer issues that seem to generate more repeat calls
-
-* Explore repeat caller trends in the three different market cities
-
-* Design charts so that stakeholders can view trends by week, month and year.
+* Help them understand how often customers are calling customer support after their first inquiry. This will assist leadership in assessing how effectively the team resolves customer questions on the first attempt.
+* Provide insights into the types of customer issues that seem to generate more repeat calls.
+* Explore repeat caller trends in the three different market cities.
+* Design charts so that stakeholders can view trends by week, month, and year.
 
 ## Data
 
-Data was provided in the form of 3 CSV files. All 3 files had an identical format so no cleaning was necessary before loading them into tableau. 
+The data was provided in the form of three CSV files. All three files had an identical format, so no cleaning was necessary before loading them into Tableau.
 
-The files contained data about the number of initial contacts to the Company's customer service team as well as the number of repeat contacts over a 7 day period following the first contact. A repeat contact is defined as any customer that called the customer service team more than once in a 7 day period following their initial contact. The data was structured as follows:
+The files contained information about the number of initial contacts to the company's customer service team, as well as the number of repeat contacts over a seven-day period following the first contact. A repeat contact is defined as any customer who called the customer service team more than once within a seven-day period after their initial contact. The data was structured as follows:
+
 
 <img width="479" alt="image" src="https://github.com/user-attachments/assets/eac4cefa-8357-420b-8904-d08f16770058" />
 
@@ -46,13 +47,15 @@ The problem type definitions were provided seperately by the management team. I 
 * problem_type = problem types provided by management team
 
 ### Data Preparation
-All tables were loaded into tableau. The 3 CSV files with data about call volumes were unioned within Tableau. The supplementle table with the problem types was also loaded into Tableau and a table relationship was created with the 2 new_type columns from each dataset. 
 
-Three new calculated columns were created to address the businesses questions:
+All tables were loaded into Tableau. The three CSV files containing data about call volumes were unioned within Tableau. The supplemental table with the problem types was also loaded into Tableau, and a table relationship was created using the `new_type` columns from each dataset.
 
-* Total Contacts = Aggregation of contacts_n. This number repreesents the total initial contacts to customer service
-* Total Repeat Contacts = Aggregation of contacts_n_1, contacts_n_2, contacts_n_3, contacts_n_4, contacts_n_5, contacts_n_6, contacts_n_7. This number represents the total volume of repeat callers. 
-* Rate of Repeat Contacts = Total Repeat Contacts divided by Total Contacts. This represents the total percentage of callers that called more than once over a 7 day period.
+Three new calculated columns were created to address the business questions:
+
+* **Total Contacts**: Aggregation of `contacts_n`. This value represents the total initial contacts to customer service.
+* **Total Repeat Contacts**: Aggregation of `contacts_n_1`, `contacts_n_2`, `contacts_n_3`, `contacts_n_4`, `contacts_n_5`, `contacts_n_6`, and `contacts_n_7`. This value represents the total volume of repeat callers.
+* **Rate of Repeat Contacts**: `Total Repeat Contacts` divided by `Total Contacts`. This represents the percentage of callers who called more than once over a seven-day period.
+
 
 ## Visualizations
 
@@ -76,7 +79,8 @@ https://public.tableau.com/app/profile/billie.jo.smith/viz/GoogleFiberCaseStudy_
 
 Market 1 is by far largets in terms of overall call volume:
 
-<img width="485" alt="image" src="https://github.com/user-attachments/assets/7caf2c15-ebe3-46be-b74c-a668d6a6d06f" />
+<img width="598" alt="image" src="https://github.com/user-attachments/assets/3f2db709-c61b-4335-9ca2-8f069fcac6e1" />
+
 
 Market 1 has high rates of repeat callers in 3 categories:
 * Account Management
@@ -110,11 +114,12 @@ Market 3 has a high rate of repeat callers in 3 categories:
 
 ### Next Steps
 
-* Investigate the reasons for additional calls for Account Management in all 3 markets
-* Determine why the number of repeat calls is higher than first contacts in Market 3 for Account Management Issues (this could be a data integrity issue)
-* Investigate the reasons for repeat callers for Internet and Wifi in Markets 1 and 3
-* Investigate the reasons for repeat callers for Scheduling in Market 3
-* Review Customer service practices in market 2 and compare them to Markets 1 and 3 to determine why Market 2 has a significantly lower rate in all problem categories
+* Investigate the reasons for additional calls related to Account Management in all three markets.
+* Determine why the number of repeat calls is higher than first contacts in Market 3 for Account Management issues (this could indicate a data integrity issue).
+* Investigate the reasons for repeat callers for Internet and Wi-Fi issues in Markets 1 and 3.
+* Investigate the reasons for repeat callers related to Scheduling in Market 3.
+* Review customer service practices in Market 2 and compare them to Markets 1 and 3 to determine why Market 2 has a significantly lower rate in all problem categories.
+
 
 Link to PDF of Executive Summary:
 
