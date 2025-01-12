@@ -110,7 +110,7 @@ Market 3 has a high rate of repeat callers in 3 categories:
 
 <img width="540" alt="image" src="https://github.com/user-attachments/assets/9e6f2d72-6ac7-4061-8382-84ea40770ae9" />
 
-## Recomendations
+## Recommendations
 
 ### Next Steps
 
